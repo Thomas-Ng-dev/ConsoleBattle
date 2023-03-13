@@ -34,5 +34,30 @@ namespace ConsoleBattle
         public int Def { get => _def; set => _def = value; }
         public int Spr { get => _spr; set => _spr = value; }
 
+        public void atkCmd(Unit target)
+        {
+            int damage = this.Str - target.Def;
+            if (damage <= 0)
+            {
+                damage = 1;
+                target.Hp -= damage;
+            }
+            else
+            {
+                target.Hp -= damage;
+            }
+            displayDMG(target, damage);
+        }
+
+        public void displayDMG(Unit target, int damage)
+        {
+            Console.WriteLine(this.Name + " attacked " + target.Name + " for " + damage + " damage.");
+        }
+        public void remainingHP()
+        {
+            Console.WriteLine(this.Name);
+            Console.WriteLine("HP: " + this.Hp);
+        }
+
     }
 }

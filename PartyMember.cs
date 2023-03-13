@@ -19,15 +19,5 @@ namespace ConsoleBattle
             Spr = spr;
         }
 
-        public void atkCmd(Monster monster)
-        {
-            monster.Hp -= this.Str;
-            remainingHP();
-        }
-        public void remainingHP()
-        {
-            Console.WriteLine(this.Name);
-            Console.WriteLine("HP: " + this.Hp);
-        }
     }
 }
