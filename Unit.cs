@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleBattle
 {
-    internal class Unit
+    class Unit
     {
         private string _name;
         private int _hp;
@@ -26,7 +26,6 @@ namespace ConsoleBattle
             Def = def;
             Spr = spr;
         }
-
         public string Name { get => _name; set => _name = value; }
         public int Hp { get => _hp; set => _hp = value; }
         public int Mp { get => _mp; set => _mp = value; }
@@ -34,5 +33,6 @@ namespace ConsoleBattle
         public int Mag { get => _mag; set => _mag = value; }
         public int Def { get => _def; set => _def = value; }
         public int Spr { get => _spr; set => _spr = value; }
+
     }
 }

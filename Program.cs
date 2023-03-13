@@ -10,7 +10,15 @@ namespace ConsoleBattle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            Monster m1 = new Monster("Goblin", 100, 100, 10, 10, 10, 10);
+            PartyMember p1 = new PartyMember("Hero", 100, 100, 10, 10, 10, 10);
+
+            m1.remainingHP();
+            p1.remainingHP();
+
+            m1.atkCmd(p1);
+            p1.atkCmd(m1);
+
         }
     }
 }
