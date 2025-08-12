@@ -21,13 +21,12 @@ namespace ConsoleBattle
                 p1.remainingHP();
 
                 m1.atkCmd(p1);
-                p1.atkCmd(m1);
 
                 m1.remainingHP();
                 p1.remainingHP();
                 turn++;
 
-                if(m1.Hp <= 0 || p1.Hp <= 0)
+                if (m1.Hp <= 0 || p1.Hp <= 0)
                 {
                     break;
                 }
@@ -35,9 +34,8 @@ namespace ConsoleBattle
                 repeat = Console.ReadLine();
             }
             while (repeat.Equals("y"));
-
             Console.WriteLine("Game Over");
-
+            Console.WriteLine("checking if git is working");
         }
     }
 }
