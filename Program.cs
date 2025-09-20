@@ -33,13 +33,13 @@ namespace ConsoleBattle
                 //{
                 //	break;
                 //}
-                controller.MonsterModel[0].remainingHP();
-                controller.PartyModel[0].remainingHP();
+                controller.MonsterModel[0].RemainingHP();
+                controller.PartyModel[0].RemainingHP();
 
-                controller.MonsterModel[0].atkCmd(controller.PartyModel[0]);
+                controller.MonsterModel[0].AtkCmd(controller.PartyModel[0]);
 
-                controller.MonsterModel[0].remainingHP();
-                controller.PartyModel[0].remainingHP();
+                controller.MonsterModel[0].RemainingHP();
+                controller.PartyModel[0].RemainingHP();
 
                 if (controller.MonsterModel[0].Hp <= 0 || controller.PartyModel[0].Hp <= 0)
                 {
