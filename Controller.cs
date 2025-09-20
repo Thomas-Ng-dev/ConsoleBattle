@@ -12,7 +12,13 @@ namespace ConsoleBattle
         private List<Unit> _partyModel;
         private List<Unit> _monsterModel;
 
-        public List<Unit> PartyModel { get => _partyModel; set => _partyModel = value; }
+		public Controller(List<Unit> partyModel, List<Unit> monsterModel)
+		{
+			_partyModel = partyModel;
+			_monsterModel = monsterModel;
+		}
+
+		public List<Unit> PartyModel { get => _partyModel; set => _partyModel = value; }
         public List<Unit> MonsterModel { get => _monsterModel; set => _monsterModel = value; }
 
         public static void displayCMDlist()
