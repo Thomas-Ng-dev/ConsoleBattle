@@ -21,11 +21,22 @@ namespace ConsoleBattle
 		public List<Unit> PartyModel { get => _partyModel; set => _partyModel = value; }
         public List<Unit> MonsterModel { get => _monsterModel; set => _monsterModel = value; }
 
-        public static void displayCMDlist()
+        public static void DisplayCommadList()
         {
-            Console.WriteLine("[1] Attack");
-            Console.WriteLine("[2] Skill");
-            Console.WriteLine("[3] Item");
-        }
+			Console.WriteLine("|----------------|");
+			Console.WriteLine("|[1] Attack		|");
+            Console.WriteLine("|[2] Defend		|");
+            Console.WriteLine("|[3] Skill		|");
+			Console.WriteLine("|[4] Item		|");
+			Console.WriteLine("|----------------|");
+		}
+		public static void CommandSelection()
+		{
+			// Get user input to select a command
+		}
+		public static void EvaluateGameState(Controller controlle)
+		{
+			// Check if game is over if any units hp = 0
+		}
     }
 }
